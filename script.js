@@ -206,7 +206,6 @@ lightboxClose.addEventListener("click", (event) => {
 lightboxClose.addEventListener("pointerdown", (event) => {
   event.preventDefault();
   event.stopPropagation();
-  closeLightbox();
 });
 
 lightbox.addEventListener("click", (event) => {
