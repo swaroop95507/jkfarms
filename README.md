@@ -49,11 +49,12 @@ Use optimized JPG images where possible. Keep large hero images around 1600px wi
 
 ## Gallery Media
 
-This lite GitHub upload package includes photos only, so it can be uploaded through the GitHub website without large video-file failures.
+The gallery supports both photos and videos. Current media includes:
 
 - 3 analyzed Kerala-style exterior photos: golden entrance, lawn approach, and sunset facade.
+- 15 local walkthrough videos copied into the `videos` folder from `IMG_2731.MOV` through `IMG_2753.MOV`.
 
-The full local package at `jk-farms-github-deploy` includes MOV videos. For production, convert the MOV files to optimized MP4/H.264 and push from a local Git clone or use Git LFS/CDN storage.
+The MOV files play in the gallery lightbox with browser video controls and use the real exterior photos as poster thumbnails. For best production performance, convert MOV files to optimized MP4/H.264 when an encoder such as FFmpeg is available.
 
 ## How to Update Phone Number
 
