@@ -12,4 +12,4 @@ Then enable GitHub Pages:
 
 The site entry file is `index.html`.
 
-Note: the `videos` folder contains MOV files. They work in the tested browser, but optimized MP4/H.264 versions are recommended for production.
+Note: this lite package intentionally excludes the MOV videos so it can be uploaded through the GitHub website. Use the full package or optimized MP4 files later if you want video on the hosted site.
