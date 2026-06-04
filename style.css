@@ -293,15 +293,15 @@ textarea {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(24, 16, 9, 0.78), rgba(36, 60, 34, 0.24)),
-    linear-gradient(0deg, rgba(251, 246, 234, 0.94), rgba(251, 246, 234, 0.06) 48%);
+    linear-gradient(90deg, rgba(18, 11, 6, 0.9) 0%, rgba(20, 14, 8, 0.68) 42%, rgba(36, 60, 34, 0.24) 74%),
+    linear-gradient(0deg, rgba(22, 15, 9, 0.34), rgba(251, 246, 234, 0.04) 52%);
 }
 
 .hero::after {
   content: "";
   position: absolute;
   inset: auto 0 0;
-  height: 34%;
+  height: 22%;
   background: linear-gradient(0deg, var(--bg-main), rgba(251, 246, 234, 0));
   pointer-events: none;
 }
@@ -309,6 +309,8 @@ textarea {
 .hero-content {
   position: relative;
   z-index: 1;
+  max-width: 780px;
+  padding: 20px 0;
 }
 
 .hero-content > * {
@@ -355,7 +357,7 @@ h1 {
 
 .hero h1 {
   color: #fff8e9;
-  text-shadow: 0 12px 34px rgba(20, 12, 6, 0.42);
+  text-shadow: 0 14px 38px rgba(0, 0, 0, 0.58);
 }
 
 .hero .eyebrow {
@@ -381,8 +383,9 @@ h3 {
 .hero-subtitle {
   max-width: 690px;
   margin: 22px 0 0;
-  color: rgba(255, 248, 233, 0.92);
+  color: rgba(255, 248, 233, 0.96);
   font-size: clamp(1rem, 2vw, 1.25rem);
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.52);
 }
 
 .hero-actions,
@@ -404,7 +407,7 @@ h3 {
 .stat-grid span {
   border: 1px solid rgba(220, 183, 109, 0.28);
   border-radius: 999px;
-  background: rgba(255, 248, 233, 0.12);
+  background: rgba(33, 24, 15, 0.42);
   color: rgba(255, 248, 233, 0.94);
   padding: 9px 14px;
   font-size: 0.88rem;
@@ -1064,7 +1067,7 @@ h3 {
 .lightbox {
   position: fixed;
   inset: 0;
-  z-index: 1400;
+  z-index: 3000;
   display: none;
   align-items: center;
   justify-items: center;
@@ -1114,7 +1117,7 @@ h3 {
   position: absolute;
   top: 22px;
   right: 22px;
-  z-index: 3;
+  z-index: 3001;
   width: 46px;
   height: 46px;
   display: grid;
@@ -1131,8 +1134,11 @@ h3 {
 }
 
 .lightbox-close span {
-  display: block;
-  transform: translateY(-1px);
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-2px);
 }
 
 .lightbox-close:hover {
@@ -1341,7 +1347,8 @@ h3 {
 
   .lightbox-close {
     top: 14px;
-    right: 14px;
+    right: auto;
+    left: 14px;
     width: 48px;
     height: 48px;
   }

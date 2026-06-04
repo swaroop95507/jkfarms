@@ -52,9 +52,10 @@ Use optimized JPG images where possible. Keep large hero images around 1600px wi
 The gallery supports both photos and videos. Current media includes:
 
 - 3 analyzed Kerala-style exterior photos: golden entrance, lawn approach, and sunset facade.
-- 15 local walkthrough videos copied into the `videos` folder from `IMG_2731.MOV` through `IMG_2753.MOV`.
+- 15 optimized MP4 walkthrough videos in the `videos` folder, named `JKF-01.mp4` through `JKF-15.mp4`.
+- 15 unique JPG video posters in the `images` folder, named `video-thumb-01.jpg` through `video-thumb-15.jpg`.
 
-The MOV files play in the gallery lightbox with browser video controls and use the real exterior photos as poster thumbnails. For best production performance, convert MOV files to optimized MP4/H.264 when an encoder such as FFmpeg is available.
+The original MOV files can remain as source footage locally, but production pages should reference the optimized MP4/H.264 files for faster mobile playback.
 
 ## How to Update Phone Number
 

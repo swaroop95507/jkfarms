@@ -43,6 +43,7 @@ function closeMenu() {
 }
 
 menuToggle.addEventListener("click", () => {
+  if (lightbox.classList.contains("active")) return;
   const isOpen = navMenu.classList.toggle("open");
   header.classList.toggle("menu-active", isOpen);
   document.body.classList.toggle("menu-open", isOpen);
@@ -132,6 +133,7 @@ document.querySelectorAll(".btn, .nav-cta, .floating-whatsapp").forEach((item) =
 
 document.querySelectorAll(".gallery-item").forEach((button) => {
   button.addEventListener("click", () => {
+    closeMenu();
     const image = button.querySelector("img");
     const thumbVideo = button.querySelector(".gallery-thumb-video");
     const mediaType = button.dataset.type || "image";
